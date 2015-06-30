@@ -496,9 +496,17 @@ function plural(ms, n, name) {
 
 },{}],4:[function(require,module,exports){
 
-var debug = require('debug')('app');
+var debug = require('debug')('app:lib:sayhello');
 
-document.querySelector('#block-content').innerHTML = 'Hello All!';
+module.exports = function sayHello() {
+  debug('saying hello!');
+  document.querySelector('#block-content').innerHTML = 'Hello All!';
+};
+
+},{"debug":1}],5:[function(require,module,exports){
+
+var debug = require('debug')('app');
+var sayHello = require('./lib/sayhello');
 
 // enable debugging
 localStorage.setItem('debug', 'app*');
@@ -506,4 +514,6 @@ localStorage.setItem('debug', 'app*');
 // tell the world we are running!
 debug('App is running');
 
-},{"debug":1}]},{},[4]);
+sayHello();
+
+},{"./lib/sayhello":4,"debug":1}]},{},[5]);
