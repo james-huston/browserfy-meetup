@@ -20,6 +20,7 @@
   "homepage": "https://github.com/james-huston/browserfy-meetup",
   "devDependencies": {
     "debug": "^2.2.0",
-    "serve": "^1.4.0"
+    "serve": "^1.4.0",
+    "superagent": "^1.2.0"
   }
 }
