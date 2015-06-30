@@ -1,0 +1,23 @@
+{
+  "name": "browserfy-meetup",
+  "version": "1.0.0",
+  "description": "Demo project to help you get started with Browserify",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --require should -r",
+    "start": "./node_modules/.bin/serve ./dist/ -p 3500"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/james-huston/browserfy-meetup.git"
+  },
+  "author": "James Huston (http://github.com/james-huston)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/james-huston/browserfy-meetup/issues"
+  },
+  "homepage": "https://github.com/james-huston/browserfy-meetup",
+  "devDependencies": {
+    "serve": "^1.4.0"
+  }
+}
