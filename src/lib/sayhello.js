@@ -1,7 +1,8 @@
 
 var debug = require('debug')('app:lib:sayhello');
+var jq = require('jquery');
 
 module.exports = function sayHello() {
   debug('saying hello!');
-  document.querySelector('#block-content').innerHTML = 'Hello All!';
+  jq('#block-content').html('Hello All!');
 };
